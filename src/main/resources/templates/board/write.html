@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" th:href="@{/css/write.css}"/>
+
+</head>
+<body>
+<div id="wrapper">
+    <main>
+        <section class="write">
+            <h1>글쓰기</h1>
+            <div class="form">
+                <form th:action="@{/board/write}" method="post" >
+                    <table class="table">
+                        <tr>
+                            <th>제목</th>
+                            <td><input type="text" name="title" placeholder="제목을 입력하세요." maxlength="20" /></td>
+                        </tr>
+                        <tr>
+                            <th>작성자</th>
+                            <td><input type="text" name="writer" placeholder="작성자를 입력하세요." /></td>
+                        </tr>
+                        <tr class="lastTr">
+                            <th>내용</th>
+                            <td>
+                                <textarea name="content" maxlength="20"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="btns">
+                        <a th:href="@{/board/list}" class="btnCancel">취소</a>
+                        <button type="submit" class="btnComplete">저장</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>

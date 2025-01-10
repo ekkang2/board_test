@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 9px;
+}
+.table th {
+    background-color: #f4f4f4;
+    color: #333;
+    width: 80px;
+}
+
+
+.tb {
+    height: 51px;
+}
+
+.lastTr {
+    height: 180px;
+}
+
+input {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+textarea {
+    width: 97%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 142px;
+}
+
+.btns {
+    float: right;
+}
+
+.btnComplete {
+    padding: 6px 11px;
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btnCancel {
+    padding: 7px 10px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btnWrite {
+    padding: 5px 10px;
+    color: #333333;
+    background-color: white;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    text-decoration: none;
+    float: right;
+}
+
+.btnEdit {
+    padding: 7px 10px;
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btnDelete {
+    padding: 7px 10px;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
